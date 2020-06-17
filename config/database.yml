@@ -1,0 +1,43 @@
+# default: &default
+#   adapter: sqlite3
+#   pool: 5
+#   timeout: 5000
+
+# development:
+#   <<: *default
+#   database: db/development.sqlite3
+
+# test:
+#   <<: *default
+#   database: db/test.sqlite3
+
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
+
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  host: localhost
+  username: narinder
+  password: 8837706318
+
+development:
+  <<: *default
+  port: 5432
+  database: job_seeker
+
+test:
+  <<: *default
+  port: 5432
+  database: job_seeker_test
+
+staging:
+  <<: *default
+  database: job_seeker_staging
+  port: 5432
+
+dev:
+  <<: *default
+  database: job_seeker
+  port: 5432

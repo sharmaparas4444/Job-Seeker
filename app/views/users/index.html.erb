@@ -1,0 +1,75 @@
+<%= render "devise/shared/side_nav" %>
+
+<div class="main">
+	<div style="background-color: grey;" class="col-md-12 col-sm-12">
+		<ul>
+		  <li><%= link_to "Login", new_user_session_path %></li>
+		  <li><%= link_to "Register", new_user_registration_path %></li>
+		  <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+		  <li><a href="#about">About</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="main row">
+	<div class="col-md-12 col-sm-12">
+		<div style="display: flex;">
+			<div class="_margin">
+				<lable>Jobs / Company</lable>
+				<input type="text" class="form-control _margin" placeholder="Search Jobs/Company">
+			</div>
+			<div class="_margin">
+				<lable>Location</lable>
+				<input type="text" class="form-control _margin" placeholder="Location">
+			</div>
+			<button style="height: 38px;margin-top: 27px;" type="button" class="btn btn-black _margin">Search</button>
+			<%= link_to 'AdvanceSearch',new_user_registration_path, class: "adv _margin" %>
+		</div>
+		<div style="display: flex;margin-top: 25px;">
+			<%= link_to 'Within ##km','', class: "btn btn-black _margin" %>
+			<%= link_to 'Compensation Range',new_user_registration_path, class: "btn btn-black _margin" %>
+			<%= link_to 'Compensation Type',new_user_registration_path, class: "btn btn-black _margin" %>
+			<%= link_to 'Job Type',new_user_registration_path, class: "btn btn-black _margin" %>
+			<%= link_to 'Company',new_user_registration_path, class: "btn btn-black _margin" %>
+		</div>
+		<div style="display: flex;margin-top: 25px;">
+			<%= link_to 'Upload your resume','', class: "_margin" %>
+			<%= link_to 'Employers post a Job',new_user_registration_path, class: "_margin" %>
+		</div>
+	</div>
+</div>
+
+
+
+<style type="text/css">  
+	@media screen and (min-width: 768px){
+		.sidenav{
+			width: 25%;
+		}
+		.main {
+			margin-left: 24%;
+		}
+	}
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  overflow: hidden;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  padding: 8px;    
+	  color: whitesmoke;
+	  background-color: grey;
+	}	
+	.row{
+	    margin-top: 65px;
+	}	
+	.adv{
+	    margin-top: 40px;
+	}
+</style> 
