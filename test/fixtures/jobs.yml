@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  description: MyText
+  status: false
+  publish_date: 2020-06-19 11:01:12
+  vacancy: 1
+  salary_rang: MyText
+  job_types: MyText
+  compensation_types: MyText
+  belongs_to: 
+
+two:
+  title: MyText
+  description: MyText
+  status: false
+  publish_date: 2020-06-19 11:01:12
+  vacancy: 1
+  salary_rang: MyText
+  job_types: MyText
+  compensation_types: MyText
+  belongs_to: 
